@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # - name: Use Node@14.x # 步骤2
+      # - name: Use Node@18.x # 步骤2
       #   uses: actions/setup-node@v1 # 作用：安装nodejs
       #   with:
-      #     node-version: 14
+      #     node-version: 18
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
