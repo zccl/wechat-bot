@@ -42,4 +42,4 @@ jobs:
       - name: 运行脚本
         run: npm run dev
         env:
-          OPENAI_API_KEY: ${{ secrets.WX_COMPANY_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
