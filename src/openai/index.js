@@ -2,10 +2,12 @@ import { remark } from 'remark'
 import stripMarkdown from 'strip-markdown'
 import { Configuration, OpenAIApi } from 'openai'
 import dotenv from 'dotenv'
-const env = dotenv.config().parsed // 环境参数
+// const env = dotenv.config().parsed // 环境参数
+dotenv.config() // 环境参数
+const { OPENAI_API_KEY } = process.env
 
 const configuration = new Configuration({
-  apiKey: env.OPENAI_API_KEY,
+  apiKey: OPENAI_API_KEY,
 })
 const openai = new OpenAIApi(configuration)
 
